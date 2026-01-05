@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #8e4a4a;
+    color: #faf7f7;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background:#8e4a4a;
+    box-shadow: 0 2px 10px rgba(191, 38, 38, 0.05);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.logo span {
+    color: #239425;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #faf7f7;
+    font-weight: 500;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    width: 100%;
+    color: #239425;
+}
+
+/* HERO */
+.hero {
+    height: 50vh;
+    background: linear-gradient(to right, #c47777, #8e4a4a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ece7e7;
+    margin: auto;
+}
+
+.btn {
+    padding: 8px 25px;
+    background: #239425;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 15px;
+    margin-top: 30px;
+    display: inline-block;
+    border: none;
+    transition: transform 0.3s;
+}
+.btn:hover{
+    background-color: #076507;
+    transform: translateY(-3px);
+}
+
+
+/* FEATURES */
+.features {
+    padding: 30px 60px;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 20px;
+}
+
+.feature-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.feature {
+    background: #925a5a;
+    padding: 30px;
+    border-radius: 15px;
+    width: 250px;
+}
+
+/* FEATURED PRODUCTS */
+.featured {
+    padding: 40px 60px;
+    background: #a95a5a;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    color: #090909;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h4 {
+    padding: 15px;
+}
+
+/* CTA */
+.cta {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.cta h2 {
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+/* PAGE HEADER */
+.page-header {
+    background: linear-gradient(to right, #c47777, #8e4a4a);
+    padding: 60px;
+    text-align: center;
+    /* background: #b16c6c; */
+}
+
+.page-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: #faf4f4;
+}
+
+/* PRODUCTS PAGE */
+.products {
+    padding: 50px 60px ;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.product-item {
+    background: #eee3e3;
+    color: #090909;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.product-item:hover {
+    transform: translateY(-8px);
+}
+
+.product-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #666;
+}
+/* ABOUT PAGE */
+.about {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.about-text h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    color: #572828;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #fdf9f9;
+}
+/* CONTACT PAGE */
+.contact {
+    padding: 80px 60px;
+}
+
+.contact-container {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #d3acac;
+    font-size: 14px;
+}
+
+.contact textarea {
+    resize: none;
+    height: 120px;
+}
+
+#formMessage {
+    font-size: 14px;
+    margin-top: 10px;
+}
